@@ -15438,6 +15438,55 @@ body {
 .rio-media-gallery  {
   margin-top: 40px;
 }
+button#search_postcode {
+  padding: 18px 20px !important;
+}
+
+#input_postcode {
+  text-align: center;
+  border-right: unset !important;
+}
+
+/* products belongs */
+.products-belong-wrapper {
+  max-width: 360px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+}
+.products-belong-wrapper .products-belong-title {
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.products-belong-wrapper .products-belong-content {
+  display: flex;
+  gap: 10px;
+}
+.products-belong-wrapper .item {
+  max-width: 90px;
+}
+.products-belong-wrapper .item a {
+  aspect-ratio: 1;
+  display: block;
+  border: 1px solid #ddd;
+}
+.products-belong-wrapper .item img {
+  width: 100%;
+  height: 100%;
+}
+.products-belong-wrapper .item p {
+  font-size: 13px;
+  padding-top: 5px;
+  letter-spacing: -1px;
+  line-height: 14px;
+}
+.products-belong-wrapper .item .item-property {
+  font-size: 11px;
+  padding-top: 5px;
+  letter-spacing: -1px;
+  line-height: 14px;
+}
 @media(min-width:1441px) {
   .product-detail__form .no-compared {
     max-width: 360px;
@@ -15476,6 +15525,10 @@ body {
 
 /* laptop */
 @media(max-width:1440px) {
+  .products-belong-wrapper .item p {
+    font-size: 12px;
+    line-height: 12px;
+  }
   .desktop-filter {
     display: none;
   }
@@ -15690,18 +15743,18 @@ body {
 }
 
 
-button#search_postcode {
-  padding: 18px 20px !important;
-}
-#input_postcode {
-  text-align: center;
-  border-right: unset !important;
-}
 
 
 
 /* mobile */
 @media(max-width:768px) {
+  .products-belong-wrapper .products-belong-title {
+    font-size: 14px;
+  }
+  .products-belong-wrapper .item p {
+    font-size: 12px;
+    padding-top: 6px;
+  }
   .product-block .custom-price {
     height: 40px;
   }
